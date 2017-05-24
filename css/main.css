@@ -1,4 +1,5 @@
-/* line 1, scss/main.css */
+@charset "UTF-8";
+/* line 2, scss/main.css */
 * {
   font-family: 'Raleway', sans-serif;
   padding: 0;
@@ -6,68 +7,92 @@
   box-sizing: border-box;
   font-size: 14px; }
 
-/* line 8, scss/main.css */
+/* line 9, scss/main.css */
 .container {
   max-width: 1170px;
   margin: 0 auto; }
 
-/* line 12, scss/main.css */
+/* line 13, scss/main.css */
 .row::after, .row::before {
   display: table;
   content: '';
   clear: both; }
 
-/* line 17, scss/main.css */
+/* line 18, scss/main.css */
 .col-1 {
   width: 8.33333%; }
 
-/* line 20, scss/main.css */
+/* line 21, scss/main.css */
 .col-2 {
   width: 16.66667%; }
 
-/* line 23, scss/main.css */
+/* line 24, scss/main.css */
 .col-3 {
   width: 25%; }
 
-/* line 26, scss/main.css */
+/* line 27, scss/main.css */
 .col-4 {
   width: 33.33333%; }
 
-/* line 29, scss/main.css */
+/* line 30, scss/main.css */
 .col-5 {
   width: 41.66667%; }
 
-/* line 32, scss/main.css */
+/* line 33, scss/main.css */
 .col-6 {
   width: 50%; }
 
-/* line 35, scss/main.css */
+/* line 36, scss/main.css */
 .col-7 {
   width: 58.33333%; }
 
-/* line 38, scss/main.css */
+/* line 39, scss/main.css */
 .col-8 {
   width: 66.66667%; }
 
-/* line 41, scss/main.css */
+/* line 42, scss/main.css */
 .col-9 {
   width: 75%; }
 
-/* line 44, scss/main.css */
+/* line 45, scss/main.css */
 .col-10 {
   width: 83.33333%; }
 
-/* line 47, scss/main.css */
+/* line 48, scss/main.css */
 .col-11 {
   width: 91.66667%; }
 
-/* line 50, scss/main.css */
+/* line 51, scss/main.css */
 .col-12 {
   width: 100%; }
 
-/* line 53, scss/main.css */
+/* line 54, scss/main.css */
 [class*='col-'] {
   float: left;
   min-height: 1px;
   border: 1px solid red;
   padding: 10px; }
+
+/* line 60, scss/main.css */
+.image {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../images/pochmurno_z_przejaśnieniem.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute; }
+
+/* line 68, scss/main.css */
+.bgInfo {
+  display: inline-block;
+  position: absolute;
+  height: 30em;
+  width: 45em;
+  margin: 17em auto;
+  background: white;
+  opacity: 0.6;
+  right: 0;
+  left: 0;
+  -webkit-box-shadow: 0px 0px 25px 6px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0px 0px 25px 6px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 0px 25px 6px rgba(0, 0, 0, 0.45); }
