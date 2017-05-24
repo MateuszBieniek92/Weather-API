@@ -83,16 +83,32 @@
   position: absolute; }
 
 /* line 68, scss/main.css */
-.bgInfo {
+.weatherInfo {
+  width: 0;
+  min-width: 100%;
   display: inline-block;
   position: absolute;
-  height: 30em;
-  width: 45em;
-  margin: 17em auto;
+  height: 25em;
+  top: 23%;
+  margin: 0 auto;
   background: white;
   opacity: 0.6;
   right: 0;
-  left: 0;
-  -webkit-box-shadow: 0px 0px 25px 6px rgba(0, 0, 0, 0.45);
-  -moz-box-shadow: 0px 0px 25px 6px rgba(0, 0, 0, 0.45);
-  box-shadow: 0px 0px 25px 6px rgba(0, 0, 0, 0.45); }
+  left: 0; }
+
+@media (min-width: 450px) {
+  /* line 81, scss/main.css */
+  .weatherInfo {
+    min-width: 75%;
+    margin: 5em auto; } }
+
+@media (min-width: 900px) {
+  /* line 85, scss/main.css */
+  .weatherInfo {
+    width: 45em;
+    height: 30em;
+    min-width: 0; } }
+
+/* line 90, scss/main.css */
+.weatherInfo:hover {
+  opacity: 0.8; }
