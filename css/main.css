@@ -112,3 +112,43 @@
 /* line 90, scss/main.css */
 .weatherInfo:hover {
   opacity: 0.8; }
+
+/* line 93, scss/main.css */
+#weather {
+  width: 400px;
+  margin: 0px auto;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: calc(50% - 120px); }
+
+@media (min-width: 450px) {
+  /* line 100, scss/main.css */
+  #weather {
+    width: 500px;
+    margin-top: calc(50% - 200px); } }
+
+/* line 103, scss/main.css */
+#weather h2 {
+  margin: 0 0 8px;
+  color: red;
+  font-size: 100px;
+  font-weight: 300;
+  text-align: center;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15); }
+
+/* line 110, scss/main.css */
+#weather ul {
+  margin: 0;
+  padding: 0; }
+
+/* line 113, scss/main.css */
+#weather li {
+  background: #fff;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  display: inline-block;
+  border-radius: 5px; }
+
+/* line 119, scss/main.css */
+#weather .currently {
+  margin: 0 20px; }
