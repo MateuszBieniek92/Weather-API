@@ -1,5 +1,21 @@
 $(function () {
 
+const $geo = $('.geolocation');    
+    
+if ("geolocation" in navigator) {
+  $geo.show(); 
+} else {
+  $geo.hide();
+}
+
+/* Where in the world are you? */
+$geo.on('click', function() {
+  navigator.geolocation.getCurrentPosition(function(position) {
+    loadWeather(position.coords.latitude+','+position.coords.longitude); //load weather using your lat/lng coordinates
+  });
+});    
+    
+    
 
 
 
