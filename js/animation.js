@@ -46,14 +46,15 @@ $(function () {
                 const sunset = weather.sunset;
 
 
-                html = '<p>' + day + ', ' + date + '</p>';
-                html += '<h2 class="temp"><i class="wi wi-yahoo-' + weather.code + '"></i> ' + celciusDeg + '&deg;' + celciusUnits + '</h2><h2 class="temp" style="display: none"><i class="wi wi-yahoo-' + weather.code + '"></i> ' + farenheitDeg + '&deg;' + farenheitUnits + '</h2>';
-                html += '<ul><li>' + city + ', ' + country + '</li>';
-                html += '<li class="currently">' + weatherCurrently + '</li>';
-                html += '<li>' + windDirection + ' ' + windSpeed + ' ' + windSpeedUnit + '</li></ul>';
+                html = '<div class="textinfo"><p class="date">' + day + ', ' + date + '</p><br>';
+                html += '<p class="city">' + city + ', ' + country + '</p><br>';
+                html += '<p class="weatherCurrently">' + weatherCurrently + '</p></div>';
+                html += '<div class="space">'+ '//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////' + '</div>';
+                html += '<i class="icon wi wi-yahoo-' + weather.code + '"></i>';
+                html += '<div class=tempDeg><h2 class="temp">' + celciusDeg + '<sup>&deg;' + celciusUnits + '</sup></h2><h2 class="temp" style="display: none"><i class="wi wi-yahoo-' + weather.code + '"></i> ' + farenheitDeg + '&deg;' + farenheitUnits + '</div>';
+                html += '<ul><li>' + windDirection + ' ' + windSpeed + ' ' + windSpeedUnit + '</li></ul>';
                 html += '<p> Weather updated at ' + weatherUpdate.format('MM/DD/YY HH:mm a') + '</p>';
                 html += '<p><i class="wi wi-sunrise"></i> ' + sunrise + ' <i class="wi wi-sunset"></i> ' + sunset + '</p>';
-
 
                 $("#weather").html(html);
                 const $temp = $('.temp');
