@@ -14,9 +14,9 @@ $(function () {
         navigator.geolocation.getCurrentPosition(function (position) {
             loadWeather(position.coords.latitude + ',' + position.coords.longitude);
         });
-        
+
     });
-    
+
     // start location
     function init() {
         loadWeather('Cracow', '');
@@ -49,12 +49,17 @@ $(function () {
                 html = '<div class="textinfo"><p class="date">' + day + ', ' + date + '</p><br>';
                 html += '<p class="city">' + city + ', ' + country + '</p><br>';
                 html += '<p class="weatherCurrently">' + weatherCurrently + '</p></div>';
-                html += '<div class="space">'+ '//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////' + '</div>';
+                html += '<div class="space">' + '//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////' + '</div>';
                 html += '<i class="icon wi wi-yahoo-' + weather.code + '"></i>';
-                html += '<div class=tempDeg><h2 class="temp">' + celciusDeg + '<sup>&deg;' + celciusUnits + '</sup></h2><h2 class="temp" style="display: none"><i class="wi wi-yahoo-' + weather.code + '"></i> ' + farenheitDeg + '&deg;' + farenheitUnits + '</div>';
-                html += '<ul><li>' + windDirection + ' ' + windSpeed + ' ' + windSpeedUnit + '</li></ul>';
-                html += '<p> Weather updated at ' + weatherUpdate.format('MM/DD/YY HH:mm a') + '</p>';
-                html += '<p><i class="wi wi-sunrise"></i> ' + sunrise + ' <i class="wi wi-sunset"></i> ' + sunset + '</p>';
+                html += '<div class=tempDeg><h2 class="temp">' + celciusDeg + '<sup>&deg;' + celciusUnits + '</sup></h2><h2 class="temp" style="display: none">' + farenheitDeg + '<sup>&deg;' + farenheitUnits + '</h2></sup></div>';
+
+                html += '<ul><li><i class="wi wi-wind wi-towards-' + windDirection.toLowerCase() + '"></i><p class="liText">' + windDirection + '</p></li>';
+                html += '<li><i class="wi wi-strong-wind"></i><p class="liText">' + windSpeed + ' ' + windSpeedUnit + '</p></li>';
+
+                html += '<li><i class="wi wi-sunrise"></i><p class="liText">' + sunrise + '</p></li>';
+                html += '<li><i class = "wi wi-sunset"></i><p class="liText">' + sunset + '</p></li ></ul>';
+                html += '<p class="update"> Weather updated at ' + weatherUpdate.format('MM/DD/YY HH:mm a') + '</p>';
+
 
                 $("#weather").html(html);
                 const $temp = $('.temp');
@@ -69,7 +74,7 @@ $(function () {
 
     };
 
-    
+
     init();
 
 });

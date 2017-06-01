@@ -40,8 +40,8 @@
         margin: 5em auto;
     }
     @media (min-width: 900px) {
-        width: 45em;
-        height: 30em;
+        width: 47em;
+        height: 27em;
         min-width: 0;
     }
 }
@@ -61,17 +61,22 @@
         position: absolute;
         left: 0;
         top: 0;
-        margin-top: 60px;
-        margin-left: 30px;
+        margin-top: 50px;
+        margin-left: 15px;
         .date,
         .weatherCurrently {
             font-size: 15px;
+            color: rgb(107, 107, 107);
+            float: left;
         }
         .city {
-            font-size: 25px;
+            font-size: 26px;
+            color: rgb(180, 180, 180);
+            float: left;
         }
     }
-    .space, .spaceSecond {
+    .space,
+    .spaceSecond {
         letter-spacing: 1px;
         position: absolute;
         color: black;
@@ -113,40 +118,168 @@
     }
     h2,
     .icon {
-        margin: 0 0 120px 85px;
-        color: white;
+        margin: -15px 0 55px 85px;
+        color: rgb(255, 255, 255);
         font-size: 100px;
         font-weight: 300;
         text-align: center;
         text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
     }
     h2 {
-        margin: 0 0 120px 0;
+        cursor: pointer;
+        margin: -10px 0 0 0;
     }
     ul {
         margin: 0;
         padding: 0;
+        // wind directions 
+        .wi-wind:before {
+            content: "\f0b1";
+        }
+        .wi-towards-n {
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        .wi-towards-nne {
+            -webkit-transform: rotate(23deg);
+            -moz-transform: rotate(23deg);
+            -ms-transform: rotate(23deg);
+            -o-transform: rotate(23deg);
+            transform: rotate(23deg);
+        }
+        .wi-towards-ne {
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+        .wi-towards-ene {
+            -webkit-transform: rotate(68deg);
+            -moz-transform: rotate(68deg);
+            -ms-transform: rotate(68deg);
+            -o-transform: rotate(68deg);
+            transform: rotate(68deg);
+        }
+        .wi-towards-e {
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            -o-transform: rotate(90deg);
+            transform: rotate(90deg);
+        }
+        .wi-towards-ese {
+            -webkit-transform: rotate(113deg);
+            -moz-transform: rotate(113deg);
+            -ms-transform: rotate(113deg);
+            -o-transform: rotate(113deg);
+            transform: rotate(113deg);
+        }
+        .wi-towards-se {
+            -webkit-transform: rotate(135deg);
+            -moz-transform: rotate(135deg);
+            -ms-transform: rotate(135deg);
+            -o-transform: rotate(135deg);
+            transform: rotate(135deg);
+        }
+        .wi-towards-sse {
+            -webkit-transform: rotate(158deg);
+            -moz-transform: rotate(158deg);
+            -ms-transform: rotate(158deg);
+            -o-transform: rotate(158deg);
+            transform: rotate(158deg);
+        }
+        .wi-towards-s {
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            transform: rotate(180deg);
+        }
+        .wi-towards-ssw {
+            -webkit-transform: rotate(203deg);
+            -moz-transform: rotate(203deg);
+            -ms-transform: rotate(203deg);
+            -o-transform: rotate(203deg);
+            transform: rotate(203deg);
+        }
+        .wi-towards-sw {
+            -webkit-transform: rotate(225deg);
+            -moz-transform: rotate(225deg);
+            -ms-transform: rotate(225deg);
+            -o-transform: rotate(225deg);
+            transform: rotate(225deg);
+        }
+        .wi-towards-wsw {
+            -webkit-transform: rotate(248deg);
+            -moz-transform: rotate(248deg);
+            -ms-transform: rotate(248deg);
+            -o-transform: rotate(248deg);
+            transform: rotate(248deg);
+        }
+        .wi-towards-w {
+            -webkit-transform: rotate(270deg);
+            -moz-transform: rotate(270deg);
+            -ms-transform: rotate(270deg);
+            -o-transform: rotate(270deg);
+            transform: rotate(270deg);
+        }
+        .wi-towards-wnw {
+            -webkit-transform: rotate(293deg);
+            -moz-transform: rotate(293deg);
+            -ms-transform: rotate(293deg);
+            -o-transform: rotate(293deg);
+            transform: rotate(293deg);
+        }
+        .wi-towards-nw {
+            -webkit-transform: rotate(313deg);
+            -moz-transform: rotate(313deg);
+            -ms-transform: rotate(313deg);
+            -o-transform: rotate(313deg);
+            transform: rotate(313deg);
+        }
+        .wi-towards-nnw {
+            -webkit-transform: rotate(336deg);
+            -moz-transform: rotate(336deg);
+            -ms-transform: rotate(336deg);
+            -o-transform: rotate(336deg);
+            transform: rotate(336deg);
+        }
+        .wi-strong-wind:before {
+            content: "\f050";
+        }
     }
     li {
         color: white;
-        padding: 20px;
+        padding: 10px 10px;
         display: inline-block;
+        .liText {
+            float: right;
+            padding: 5px 0 0 10px;
+            font-weight: 500;
+            color: #b4b4b4;
+        }
     }
     .currently {
         margin: 0 20px;
     }
+    .update {
+        opacity: 0.3;
+    }
     i {
-        color: white;
+        color: #6b6b6b; //white;
         font-family: weather;
-        font-size: 100px;
+        font-size: 28px;
         font-weight: normal;
         font-style: normal;
         line-height: 1.0;
     }
     margin-top: calc(50% - 120px);
     p {
-        float: left;
-        color: white;
+        color: #b4b4b4;
         i {
             font-size: 35px;
         }
@@ -317,12 +450,38 @@
 }
 
 .geolocation {
-    display: block;
+    cursor: pointer;
+    display: flex;
     margin: 15px auto;
-    width: 140px;
-    padding: 5px;
-    background: transparent;
-    color: white;
+    width: 150px;
+    padding: 5px 15px;
+    color: #b4b4b4;
     border: 0;
-    border-radius: 5px;
+    height: 41px;
+    background: rgba(54, 54, 54, 1);
+    background-image: -moz-linear-gradient(top, rgba(54, 54, 54, 1) 0%, rgba(37, 37, 37, 1) 100%);
+    background-image: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(54, 54, 54, 1)), color-stop(100%, rgba(37, 37, 37, 1)));
+    background-image: -webkit-linear-gradient(top, rgba(54, 54, 54, 1) 0%, rgba(37, 37, 37, 1) 100%);
+    background-image: -o-linear-gradient(top, rgba(54, 54, 54, 1) 0%, rgba(37, 37, 37, 1) 100%);
+    background-image: -ms-linear-gradient(top, rgba(54, 54, 54, 1) 0%, rgba(37, 37, 37, 1) 100%);
+    background-image: linear-gradient(to bottom, rgba(54, 54, 54, 1) 0%, rgba(37, 37, 37, 1) 100%);
+    -webkit-box-shadow: 0px 0px 37px -7px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 37px -7px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 37px -7px rgba(0, 0, 0, 1);
+    top: 135px;
+    position: absolute;
+    margin: 5px 0;
+}
+
+.geolocation:hover {
+    background: rgba(37, 37, 37, 1);
+    background-image: -moz-linear-gradient(top, rgba(37, 37, 37, 1) 0%, rgba(54, 54, 54, 1) 100%);
+    background-image: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(37, 37, 37, 1)), color-stop(100%, rgba(54, 54, 54, 1)));
+    background-image: -webkit-linear-gradient(top, rgba(37, 37, 37, 1) 0%, rgba(54, 54, 54, 1) 100%);
+    background-image: -o-linear-gradient(top, rgba(37, 37, 37, 1) 0%, rgba(54, 54, 54, 1) 100%);
+    background-image: -ms-linear-gradient(top, rgba(37, 37, 37, 1) 0%, rgba(54, 54, 54, 1) 100%);
+    background-image: linear-gradient(to bottom, rgba(37, 37, 37, 1) 0%, rgba(54, 54, 54, 1) 100%);
+    -webkit-box-shadow: 0px 0px 37px -7px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 37px -7px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 37px -7px rgba(0, 0, 0, 1);
 }
