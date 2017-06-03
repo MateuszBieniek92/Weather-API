@@ -1,6 +1,8 @@
 $(function () {
 
-    const $geo = $('.geolocation');
+    const $geo = $('.geolocation').first();
+
+    console.log($geo);
 
     // geolocation
     if ("geolocation" in navigator) {
@@ -59,6 +61,15 @@ $(function () {
                 html += '<li><i class="wi wi-sunrise"></i><p class="liText">' + sunrise + '</p></li>';
                 html += '<li><i class = "wi wi-sunset"></i><p class="liText">' + sunset + '</p></li ></ul>';
                 html += '<p class="update"> Weather updated at ' + weatherUpdate.format('MM/DD/YY HH:mm a') + '</p>';
+
+
+
+                for (var i = 1; i < 8; i++) {
+                    html += '<p>' + weather.forecast[i].day + ': ' + weather.forecast[i].high + '<sup>&deg;'+ celciusUnits + '</sup></p>';
+                    html += '<i class="forecastIcon wi wi-yahoo-' + weather.forecast[i].code + '"></i>';
+                };
+
+
 
 
                 $("#weather").html(html);
