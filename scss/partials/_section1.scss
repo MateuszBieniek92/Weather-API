@@ -20,7 +20,7 @@
     min-width: 100%;
     display: inline-block;
     position: absolute;
-    height: 35em;
+    height: 30em;
     top: 23%;
     margin: 0 auto;
     background: rgba(68, 68, 68, 1);
@@ -41,7 +41,7 @@
     }
     @media (min-width: 900px) {
         width: 47em;
-        height: 27em;
+        height: 30em;
         min-width: 0;
     }
 }
@@ -126,7 +126,7 @@
         text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
     }
     .forecastIcon {
-        margin: -15px 0 55px 85px;
+        margin: -5px 0 -5px 0;
         color: rgb(255, 255, 255);
         font-size: 30px;
         font-weight: 300;
@@ -275,7 +275,20 @@
         margin: 0 20px;
     }
     .update {
-        opacity: 0.3;
+        margin-top: 15px;
+        opacity: 0.4;
+    }
+    .forecastSection {
+        display: inline-flex;
+        li {
+            display: block;
+        }
+        li:nth-child(1) {
+            color: #b4b4b4;
+        }
+        li:nth-child(3) {
+            color: #b4b4b4;
+        }
     }
     i {
         color: #6b6b6b; //white;

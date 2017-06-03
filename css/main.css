@@ -95,7 +95,7 @@
   min-width: 100%;
   display: inline-block;
   position: absolute;
-  height: 35em;
+  height: 30em;
   top: 23%;
   margin: 0 auto;
   background: #444444;
@@ -121,7 +121,7 @@
   /* line 100, scss/main.css */
   .weatherInfo {
     width: 47em;
-    height: 27em;
+    height: 30em;
     min-width: 0; } }
 
 /* line 105, scss/main.css */
@@ -218,7 +218,7 @@
 
 /* line 177, scss/main.css */
 #weather .forecastIcon {
-  margin: -15px 0 55px 85px;
+  margin: -5px 0 -5px 0;
   color: white;
   font-size: 30px;
   font-weight: 300;
@@ -390,9 +390,26 @@
 
 /* line 301, scss/main.css */
 #weather .update {
-  opacity: 0.3; }
+  margin-top: 15px;
+  opacity: 0.4; }
 
-/* line 303, scss/main.css */
+/* line 304, scss/main.css */
+#weather .forecastSection {
+  display: inline-flex; }
+
+/* line 306, scss/main.css */
+#weather .forecastSection li {
+  display: block; }
+
+/* line 308, scss/main.css */
+#weather .forecastSection li:nth-child(1) {
+  color: #b4b4b4; }
+
+/* line 310, scss/main.css */
+#weather .forecastSection li:nth-child(3) {
+  color: #b4b4b4; }
+
+/* line 312, scss/main.css */
 #weather i {
   color: #6b6b6b;
   font-family: weather;
@@ -401,15 +418,15 @@
   font-style: normal;
   line-height: 1.0; }
 
-/* line 310, scss/main.css */
+/* line 319, scss/main.css */
 #weather p {
   color: #b4b4b4; }
 
-/* line 312, scss/main.css */
+/* line 321, scss/main.css */
 #weather p i {
   font-size: 35px; }
 
-/* line 314, scss/main.css */
+/* line 323, scss/main.css */
 #weather .wi {
   display: inline-block;
   font-family: 'weathericons';
@@ -419,211 +436,211 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-/* line 322, scss/main.css */
+/* line 331, scss/main.css */
 #weather .wi-yahoo-0:before {
   content: "\f056"; }
 
-/* line 324, scss/main.css */
+/* line 333, scss/main.css */
 #weather .wi-yahoo-1:before {
   content: "\f00e"; }
 
-/* line 326, scss/main.css */
+/* line 335, scss/main.css */
 #weather .wi-yahoo-2:before {
   content: "\f073"; }
 
-/* line 328, scss/main.css */
+/* line 337, scss/main.css */
 #weather .wi-yahoo-3:before {
   content: "\f01e"; }
 
-/* line 330, scss/main.css */
+/* line 339, scss/main.css */
 #weather .wi-yahoo-4:before {
   content: "\f01e"; }
 
-/* line 332, scss/main.css */
+/* line 341, scss/main.css */
 #weather .wi-yahoo-5:before {
   content: "\f017"; }
 
-/* line 334, scss/main.css */
+/* line 343, scss/main.css */
 #weather .wi-yahoo-6:before {
   content: "\f017"; }
 
-/* line 336, scss/main.css */
+/* line 345, scss/main.css */
 #weather .wi-yahoo-7:before {
   content: "\f017"; }
 
-/* line 338, scss/main.css */
+/* line 347, scss/main.css */
 #weather .wi-yahoo-8:before {
   content: "\f015"; }
 
-/* line 340, scss/main.css */
+/* line 349, scss/main.css */
 #weather .wi-yahoo-9:before {
   content: "\f01a"; }
 
-/* line 342, scss/main.css */
+/* line 351, scss/main.css */
 #weather .wi-yahoo-10:before {
   content: "\f015"; }
 
-/* line 344, scss/main.css */
+/* line 353, scss/main.css */
 #weather .wi-yahoo-11:before {
   content: "\f01a"; }
 
-/* line 346, scss/main.css */
+/* line 355, scss/main.css */
 #weather .wi-yahoo-12:before {
   content: "\f01a"; }
 
-/* line 348, scss/main.css */
+/* line 357, scss/main.css */
 #weather .wi-yahoo-13:before {
   content: "\f01b"; }
 
-/* line 350, scss/main.css */
+/* line 359, scss/main.css */
 #weather .wi-yahoo-14:before {
   content: "\f00a"; }
 
-/* line 352, scss/main.css */
+/* line 361, scss/main.css */
 #weather .wi-yahoo-15:before {
   content: "\f064"; }
 
-/* line 354, scss/main.css */
+/* line 363, scss/main.css */
 #weather .wi-yahoo-16:before {
   content: "\f01b"; }
 
-/* line 356, scss/main.css */
+/* line 365, scss/main.css */
 #weather .wi-yahoo-17:before {
   content: "\f015"; }
 
-/* line 358, scss/main.css */
+/* line 367, scss/main.css */
 #weather .wi-yahoo-18:before {
   content: "\f017"; }
 
-/* line 360, scss/main.css */
+/* line 369, scss/main.css */
 #weather .wi-yahoo-19:before {
   content: "\f063"; }
 
-/* line 362, scss/main.css */
+/* line 371, scss/main.css */
 #weather .wi-yahoo-20:before {
   content: "\f014"; }
 
-/* line 364, scss/main.css */
+/* line 373, scss/main.css */
 #weather .wi-yahoo-21:before {
   content: "\f021"; }
 
-/* line 366, scss/main.css */
+/* line 375, scss/main.css */
 #weather .wi-yahoo-22:before {
   content: "\f062"; }
 
-/* line 368, scss/main.css */
+/* line 377, scss/main.css */
 #weather .wi-yahoo-23:before {
   content: "\f050"; }
 
-/* line 370, scss/main.css */
+/* line 379, scss/main.css */
 #weather .wi-yahoo-24:before {
   content: "\f050"; }
 
-/* line 372, scss/main.css */
+/* line 381, scss/main.css */
 #weather .wi-yahoo-25:before {
   content: "\f076"; }
 
-/* line 374, scss/main.css */
+/* line 383, scss/main.css */
 #weather .wi-yahoo-26:before {
   content: "\f013"; }
 
-/* line 376, scss/main.css */
+/* line 385, scss/main.css */
 #weather .wi-yahoo-27:before {
   content: "\f031"; }
 
-/* line 378, scss/main.css */
+/* line 387, scss/main.css */
 #weather .wi-yahoo-28:before {
   content: "\f002"; }
 
-/* line 380, scss/main.css */
+/* line 389, scss/main.css */
 #weather .wi-yahoo-29:before {
   content: "\f031"; }
 
-/* line 382, scss/main.css */
+/* line 391, scss/main.css */
 #weather .wi-yahoo-30:before {
   content: "\f002"; }
 
-/* line 384, scss/main.css */
+/* line 393, scss/main.css */
 #weather .wi-yahoo-31:before {
   content: "\f02e"; }
 
-/* line 386, scss/main.css */
+/* line 395, scss/main.css */
 #weather .wi-yahoo-32:before {
   content: "\f00d"; }
 
-/* line 388, scss/main.css */
+/* line 397, scss/main.css */
 #weather .wi-yahoo-33:before {
   content: "\f083"; }
 
-/* line 390, scss/main.css */
+/* line 399, scss/main.css */
 #weather .wi-yahoo-34:before {
   content: "\f00c"; }
 
-/* line 392, scss/main.css */
+/* line 401, scss/main.css */
 #weather .wi-yahoo-35:before {
   content: "\f017"; }
 
-/* line 394, scss/main.css */
+/* line 403, scss/main.css */
 #weather .wi-yahoo-36:before {
   content: "\f072"; }
 
-/* line 396, scss/main.css */
+/* line 405, scss/main.css */
 #weather .wi-yahoo-37:before {
   content: "\f00e"; }
 
-/* line 398, scss/main.css */
+/* line 407, scss/main.css */
 #weather .wi-yahoo-38:before {
   content: "\f00e"; }
 
-/* line 400, scss/main.css */
+/* line 409, scss/main.css */
 #weather .wi-yahoo-39:before {
   content: "\f00e"; }
 
-/* line 402, scss/main.css */
+/* line 411, scss/main.css */
 #weather .wi-yahoo-40:before {
   content: "\f01a"; }
 
-/* line 404, scss/main.css */
+/* line 413, scss/main.css */
 #weather .wi-yahoo-41:before {
   content: "\f064"; }
 
-/* line 406, scss/main.css */
+/* line 415, scss/main.css */
 #weather .wi-yahoo-42:before {
   content: "\f01b"; }
 
-/* line 408, scss/main.css */
+/* line 417, scss/main.css */
 #weather .wi-yahoo-43:before {
   content: "\f064"; }
 
-/* line 410, scss/main.css */
+/* line 419, scss/main.css */
 #weather .wi-yahoo-44:before {
   content: "\f00c"; }
 
-/* line 412, scss/main.css */
+/* line 421, scss/main.css */
 #weather .wi-yahoo-45:before {
   content: "\f00e"; }
 
-/* line 414, scss/main.css */
+/* line 423, scss/main.css */
 #weather .wi-yahoo-46:before {
   content: "\f01b"; }
 
-/* line 416, scss/main.css */
+/* line 425, scss/main.css */
 #weather .wi-yahoo-47:before {
   content: "\f00e"; }
 
-/* line 418, scss/main.css */
+/* line 427, scss/main.css */
 #weather .wi-yahoo-3200:before {
   content: "\f077"; }
 
-/* line 420, scss/main.css */
+/* line 429, scss/main.css */
 #weather .wi-sunrise:before {
   content: "\f051"; }
 
-/* line 422, scss/main.css */
+/* line 431, scss/main.css */
 #weather .wi-sunset:before {
   content: "\f052"; }
 
-/* line 425, scss/main.css */
+/* line 434, scss/main.css */
 .geolocation {
   cursor: pointer;
   margin: 15px auto;
@@ -646,7 +663,7 @@
   position: absolute;
   margin: 5px 0; }
 
-/* line 447, scss/main.css */
+/* line 456, scss/main.css */
 .geolocation:hover {
   background: #252525;
   background-image: -moz-linear-gradient(top, #252525 0%, #363636 100%);
@@ -659,6 +676,6 @@
   -moz-box-shadow: 0px 0px 37px -7px black;
   box-shadow: 0px 0px 37px -7px black; }
 
-/* line 459, scss/main.css */
+/* line 468, scss/main.css */
 #weeklyWeather {
   left: 150px; }
