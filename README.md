@@ -3,8 +3,11 @@ An application that will allow you to check the weather wherever you are.
 
 ## Used technologies: 
 
-In progress... :)
+* HTML
+* CSS
+* jQuery
+* SASS
 
 ## Demo:
 
-In progress... :)
+https://mateuszbieniek92.github.io/Weather-API/
